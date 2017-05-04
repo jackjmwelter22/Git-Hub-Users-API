@@ -38,11 +38,7 @@ public class GitAdapter extends RecyclerView.Adapter<GitViewHolder> {
             public void onClick(View v) {
                 Intent intent= new Intent(mContext,DetailActivity.class);
                 intent.putExtra("login",dataObject.getLogin());
-                //mContext.startActivity(intent);
-
-                ActivityOptionsCompat options = ActivityOptionsCompat
-                        .makeSceneTransitionAnimation(this, holder.imageView, mContext.getString(R.string.activity_image_trans));
-                mContext.startActivity(intent, options.toBundle());
+                mContext.startActivity(intent);
             }
         });
     }

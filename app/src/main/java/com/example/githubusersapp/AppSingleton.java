@@ -41,7 +41,7 @@ class AppSingleton {
                             @Override
                             public Response intercept(Chain chain) throws IOException {
                                 Request request = chain.request();
-                                HttpUrl url = request.url().newBuilder().addQueryParameter("access_token", "94b03abf4d63c51cec82c722218ad0ef8116d2b5").build();
+                                HttpUrl url = request.url().newBuilder().addQueryParameter("access_token", "ae7ef2c963f99d04e557cd508052d62995595221").build();
                                 request = request.newBuilder().url(url).build();
                                 return chain.proceed(request);
                             }

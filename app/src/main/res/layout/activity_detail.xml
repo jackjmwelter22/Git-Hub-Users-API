@@ -19,8 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:transitionName="@string/activity_image_trans"/>
+            android:scaleType="centerCrop"/>
 
         <TextView
             android:id="@+id/loginTextView"
